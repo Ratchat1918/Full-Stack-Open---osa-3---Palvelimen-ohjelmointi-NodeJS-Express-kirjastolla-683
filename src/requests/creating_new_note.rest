@@ -1,0 +1,19 @@
+GET http://localhost:3001/api/notes/
+
+###
+DELETE http://localhost:3001/api/notes/3 HTTP/1.1
+content-type: application/json
+
+{
+      "id": "3",
+      "content": "GET and POST are the most important methods of HTTP protocol",
+      "important": true
+    }
+###
+POST http://localhost:3001/api/notes HTTP/1.1
+content-type: application/json
+
+{
+    "note": "fewsdfdffd",
+    "important": "true"
+}
